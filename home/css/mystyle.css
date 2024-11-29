@@ -65,7 +65,7 @@ th, td {
   text-align: left;
 }
 
-.image-gallery {
+div.gallery {
   background-color: #fce4f7;
   width: 800px;
   padding: 15px;
@@ -74,9 +74,9 @@ th, td {
   text-align: left;
 }
 
-.image-gallery img {
-  width: 230px;
-  height: 300px;
-  border-radius: 10px;
-  margin-left: 26px;
+div.gallery img {
+width: 230px;
+height: 300px;
+border-radius: 10px;
+margin-left: 26px;
 }
