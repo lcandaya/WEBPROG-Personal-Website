@@ -1,14 +1,26 @@
+body{
+  background-color: #f9c3e1;
+}
+
 .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: DodgerBlue;
-  }
-   
-  .flex-container > div {
-    background-color: #f1f1f1;
-    width: 200px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 10px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(255, 30, 199);
+
+} 
+ 
+.flex-container > div {
+  background-color: #f9c3e1;
+  width: calc(25% - 20px); 
+  margin: 10px;            
+  text-align: center;
+  line-height: 20px;   
+}
+
+.paragraph {
+  font-size: 15px;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 22px;
+}
