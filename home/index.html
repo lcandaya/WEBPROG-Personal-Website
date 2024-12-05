@@ -1,107 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>WEBPROG Personal Webpage</title>
+    <link rel="stylesheet" href="css/flexbox-grid.css?version=0.1">
+    <title>Grid with Flexwrap</title>
 </head>
-  
 <body>
-    <h1>Personal Webpage</h1>
-        <div>
+    <div class="container">
+        <header>
+          <h1>Hi there!
+          <br>I'm Lalainne!</h1>
+        </header>
+
+        <div class="grid">
+          <div class="grid-item">
             <h3>About Me</h3>
-                <p>Hi! I am Lalainne Andaya, a second year student at <a href="https://www.apc.edu.ph/">Asia Pacific College</a>!
+                <p class="paragraph">Hi! I am Lalainne Andaya, a second year student at Asia Pacific College!
                     <br>I like the color pink, and I love dogs!
-                    <br> You can contact me <a href="https://www.linkedin.com/in/lalainne-andaya/">here!</a>
                 </p>
-        </div>
-
-
-        <div> 
-            <h3>Education / Achievements</h3>
-                <p> I graduated with High Honors from Asia Pacific College-Senior High School and I am currently 
-                    <br>a second year college student studying at Asia Pacific College. 
-                    <br> I am currently taking a bachelor's degree in Bachelor of Science in Information Technology with a specialization in Mobile Internet Technologies.
+                <p class="paragraph">
+                    You can contact me here:
                 </p>
-        </div>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/lalainne-andaya/">LinkedIn</a></li>
+                    <li><a href="https://www.facebook.com/lalainne.andaya">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/aaeillnn_">Instagram</a></li>
+                </ul>
+          </div>
+
+          <div class="grid-item">
+            <h3>Education</h3>
+                <p class="paragraph">
+                    <b>Tertiary</b>
+                    <br>Asia Pacific college <br>2023 - Present
+                    <br>BS Information Technology
+                </p>
+                <p class="paragraph">
+                    <b>Senior High School</b>
+                    <br>Asia Pacific College
+                    <br>2021-2023
+                    <br>STEM-IT
+                </p>
+                <p class="paragraph">
+                    <b>Junior High School</b>
+                    <br>Pasay City South High School
+                    <br>2017-2021
+                </p>
+          </div>
 
 
-        <div>
-            <h3>Course</h3>
-                <p>I am currently taking the program BSIT-MI, where we specialize in Mobile Internet Technologies. To learn more, click <a href="https://www.apc.edu.ph/programs/socit/bs-information-technology/">here</a>!</p>
-        </div>
-        
+          <div class="grid-item">
+            <h3>Educational Achievements</h3>
+            <p class="paragraph">
+                <ul>
+                    <li>Academic Awardee: AY 2023-2024</li>
+                    <li>Successful Paper Presentation on the 5th International
+                        Conference of the Arts and Sciences, Cebu Normal University: 
+                        <i>"Pagsusuri ng Code-Switching sa Klase ng Bilogy sa Asia Pacific College-Senior High School</i>
+                    </li>
+                    <li>Graduated Senior High School with High Honors</li>
+                </ul>
+            </p>
+          </div>
 
-        <div>
+
+          <div class="grid-item">
             <h3>IT Experiences</h3>
-                <p> 
-                    <ul>
-                        <li>Graduated from the STEM-IT track of APC for High School</li>
-                        <li>Created simple webpages in High School</li>
-                        <li>Created simple mobile applications for subjects/courses in College</li>
-                    </ul> 
-                </p> 
-        </div>
+            <p class="paragraph">
+                <ul>
+                    <li>Graduated from the STEM-IT track of APC for High School</li>
+                    <li>Created simple webpages during Senior High School</li>
+                    <li>Created simple mobile applications for subjects/courses in College</li>
+                </ul>
+            </p>
+
+          </div>
 
 
-        <div>
+          <div class="grid-item">
             <h3>Hobbies & Interests</h3>
-                <p> 
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Hobies</th>
-                                <th>Samples</th>
-    
-                            </tr>
-                        </thead>
+            <p class="paragraph">
+                I have recently been into make-up and I've been trying styles here and there. I also like watching kdramas and I am into K-Pop!
+            </p>
+            <p class="paragraph">
+                I'm into the K-Pop groups <i>Seventeen, BTS, Aespa, and Izna</i>
+                I also like collecting photocards.
+            </p>
+          </div>
 
-                        <tbody>
-                            <tr>
-                                <td>Reading</td>
-                                <td>Reading fan fictions</td>
-                            </tr>
-    
-                            <tr> 
-                                <td>Collecting</td>
-                                <td>Photocards and K-Pop merchandise</td>
-                            </tr>
-    
-                            <tr>                            
-                                <td>Playing</td>
-                                <td>Bubble Pop and Block Blast</td></tr>
-                            </tr>
-    
-                            <tr>
-                                <td>Make-up</td>
-                                <td>Doing my make-up</td>
-                            </tr>
-                        </tbody>
-                        
-                    </table>
-        </div>
 
-        <div>
-            <h3>Goals In Life / Dream</h3>
-                <p>
-                    <ol>
-                        <li>Graduated college on time</li>
-                        <li>Find a stable job after graduating</li>
-                        <li>Become financially stable and give back to my loved ones</li>
-                        <li>Travel the world with my family</li>
-                    </ol> 
-                </p>
-        </div>
-            
+          <div class="grid-item">
+            <h3>Goals / Dreams in Life</h3>
+            <p class="paragraph">
+                It has always been a lifelong dream of mine to travel the world with my family.
+                One of my goals is to graduate on time and with flying colors
+                to make my family proud. I want to give back to the people who loves and supports me both financially and
+                emotionally.
+            </p>
+          </div>
 
-        <div>
-            <h3>Picture Gallery</h3>
-                <p>
-                    Here are pictures to get to know me more!
-                </p>
-                <img src="me.jpg" alt="Me" width="300" width="400">
-                <img src="https://i.pinimg.com/736x/0c/61/1a/0c611a91c63fdabeb8994aff8714286a.jpg" alt="Photocards" width="300" height="400">
-                <img src="makeup.jpg" alt="Make-up products" width="323" width="400">
-        </div>
 
+          <div class="img-gallery">
+            <b>Picture Gallery</b>
+            <p class="paragraph">Here are pictures to get to know me more!</p>
+            <div class="img-gallery-item">
+              <img src="me.jpg" alt="Me">
+              <img src="https://i.pinimg.com/736x/0c/61/1a/0c611a91c63fdabeb8994aff8714286a.jpg" alt="Photocards">
+              <img src="makeup.jpg" alt="Make-up products">
+            </div>
+          </div>
+          
+
+          </div>
+      </div>
 </body>
-  
 </html>
