@@ -26,9 +26,7 @@ body::before {
     background-position: center;
     filter: blur(2px); 
     z-index: -1; 
-
 }
-
 
 .card {
     background-color: #FF8DA3;
@@ -37,6 +35,7 @@ body::before {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     padding: 20px;
+    position: relative;
 }
 
 .image-section {
@@ -45,6 +44,7 @@ body::before {
     height: 150px;
     border-radius: 10px;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .welcome-text {
@@ -60,23 +60,84 @@ body::before {
 
 .button-section {
     margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
 }
 
-.btn {
+.gtkm-btn {
     background-color: #FFDAF1;
     border: none;
     color: #E37E91;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 20px;
-    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
     font-size: 0.9rem;
     transition: all 0.3s ease;
+    width: 21rem;
+    cursor: pointer; 
+    text-align: center;
 }
 
-.btn:hover {
+.gtkm-btn:hover {
     background-color: #fe5a78;
     color: #FFDAF1;
-    transform: translateY(-3px);
 }
 
+.home-btn {
+    position: absolute;
+    top: 190px;
+    right: 20px;
+    background-image: url(../images/icon_home.png);
+    background-size: 20px; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FFDAF1; 
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; 
+    width: 50px; 
+    height: 38px; 
+}
+
+.gtkm-btns {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 10px; 
+}
+
+#aboutMeBtn, #galleryBtn, #educationBtn {
+    background-color: #FFDAF1;
+    border: none;
+    color: #E37E91;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    text-align: center;
+    cursor: pointer; 
+    flex: 1;
+    display: none; 
+}
+
+#aboutMeBtn:hover, #galleryBtn:hover, #educationBtn:hover {
+    background-color: #fe5a78;
+    color: #FFDAF1;
+}
+
+.content {
+    display: none; 
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #E37E91;
+    text-align: center;
+    height: 0; 
+    transition: height 0.3s ease, margin 0.3s ease; 
+}
+
+.content.show {
+    display: block; 
+    height: auto; 
+    margin-top: 20px; 
+}
