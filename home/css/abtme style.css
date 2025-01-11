@@ -134,13 +134,26 @@ body::before {
     border-radius: 10px;
 }
 
+.display-box {
+    text-align: center;
+    color: #E37E91;
+    line-height: 1.5;
+    background-color: #FFDAF1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-.footer-connect {
+.hidden-content {
+    display: none;
+}
+
+.footer-form {
     width: 98%;
     margin-top: 20px;
     padding: 10px;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     color: #E37E91;
     background-color: #FFDAF1;
     border: none; 
@@ -149,8 +162,7 @@ body::before {
     cursor: pointer; 
 }
 
-/*
-.footer-content {
-
+.footer-form:hover {
+    background-color: #fe5a78;
+    color: #FFDAF1;
 }
-
