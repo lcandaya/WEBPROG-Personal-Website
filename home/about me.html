@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Lalainne</title>
+    <title>Welcome Page</title>
     <link rel="stylesheet" href="css/abtme style.css">
 </head>
 <body>
@@ -14,25 +14,57 @@
                 <button class="btn home-btn"></button>
             </a>
         </div>
-        <div class="nav-buttons">
-            <button class="nav-btn active">About me</button>
-            <button class="nav-btn">Goals</button>
-            <button class="nav-btn">Likes</button>
-            <button class="nav-btn">Hobbies</button>
+        <div class="nav-buttons button-container">
+            <button class="nav-btn active" data-target="about-me">About Me</button>
+            <button class="nav-btn" data-target="goals">Goals</button>
+            <button class="nav-btn" data-target="likes">Likes</button>
+     
         </div>
         <div class="content">
             <div class="image-container"></div>
-
-            <h2>🌸 Lei 🌸</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            
-            <div class="footer-connect">Connect with me</div>
+            <div id="display-box" class="display-box"></div>
         </div>
+        <div class="hidden-content" id="about-me">
+            <h2>🌸 Lei 🌸</h2>
+            <p>I am Lalainne Andaya, but my friends and family call me <i>Lei</i>. I am currently a second year student
+                at Asia Pacific College, taking BSIT with a specialization in Mobile Internet Technologies. I was a graduate 
+                of APC-SHS as part of batch 2023, and I took STEM-IT as my SHS track. 
+                <br><br>
+                During my stay at APC as a senior high school student, I found myself enjoying what we did which made me decide
+                to take the same path for college. And during those years, including the current experience I have, I, along with my 
+                teammates have created a couple of webpages for our projects. We were also able to create a game using python back in 12th
+                grade. It was a fun experience, but it made me realize that game development is not for me. 
+            </p>
+
+        </div>
+        <div class="hidden-content" id="goals">
+            <h2>🌠 Goals 🌠</h2>
+            <p>
+                My short-term goals include excelling in my studies, improving my technical skills, 
+                and creating more projects to build my portfolio. It is also my goal to pass all my courses with flying colors, graduate on time,
+                and graduate with latin honors. 
+            </p>
+        </div>
+        <div class="hidden-content" id="likes">
+            <h2>🌷 Hobbies and Interests 🌷</h2>
+            <p>
+                As mentioned briefly, I like the color pink. I like it so much that almost everything that I own is in that color. 
+                I have been <i>into K-Pop</i>> since 2017 and I am into groups such as BTS, Seventeen, XG, and Izna. Back in 2022 to 2023, I used
+                to <i>collect photocards</i> which are inclusions in K-Pop albums. I used to have more than 3 dozen photocards of my biases, but I
+                decided to let them go and only kept my top 5 most favorite photocards.
+                <br><br>
+                Recently, whenever I'm stressed or feeling overwhelmed, I <i>like making paper stars</i>. It calms me down and eases my mind. I also find
+                doing my <i>makeup</i> therapeutic. I have been into makeup only since the first quarter of last year, and since then I have been 
+                building my collection bit by bit. Besides all these, I have also been into <i>running</i>. I started it for one of 
+                our courses, but I now do it because I enjoy it.
+            </p>
+        </div>
+
+        <a href="">
+            <button class="footer-form">Let me get to know you too by clicking here!</button>
+        </a>
+
     </div>
-    
+    <script src="js/abtme.js"></script>
 </body>
 </html>
