@@ -1,8 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
-    <link rel="stylesheet" href="css/gallery style.css">
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="css/gallery style.css">
 </head>
+<body>
+
+<div class="main-container">
+  <div class="header">
+    <div class="title-container">Photo Gallery</div>
+    <a href="index.html">
+        <button class="home-btn"></button>
+    </a>
+  </div>
+
+  <div id="app">
+    <div class="gallery-container">
+      <figure v-for="photo in photos" :key="photo.name">
+        <img :src="photo.url" :alt="photo.name">
+        <figcaption>{{ photo.name }}</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="js/gallery.js"></script>
+
+</body>
+</html>
