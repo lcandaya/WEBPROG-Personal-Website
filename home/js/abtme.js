@@ -14,13 +14,11 @@ buttons.forEach(button => {
             displayBox.innerHTML = contentElements[targetId];
         }
 
-        // Update active button
         buttons.forEach(btn => btn.classList.remove('active'));
         button.classList.add('active');
     });
 });
 
-// Initialize with "About Me" content
 if (contentElements['about-me']) {
     displayBox.innerHTML = contentElements['about-me'];
 }
