@@ -51,17 +51,36 @@ body::before {
 
 .title-container {
     flex: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between; 
     padding: 15px;
     margin-right: 10px;
-    border: none;
-    border-radius: 8px;
     background-color: #FFDAF1;
     color: #E37E91;
     font-size: 16px;
     font-weight: bold;
-    outline: none;
-    text-align: center;
+    border-radius: 8px;
+    line-height: 1.5;
 }
+
+.icons-social {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-style {
+    text-decoration: none;
+    color: #E37E91; 
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.icon-style:hover {
+    color: #FFA6B8; 
+}
+
 
 .home-btn {
     background-image: url(../images/icon_home.png);
@@ -149,7 +168,7 @@ body::before {
 }
 
 .footer-form {
-    width: 98%;
+    width: 100%;
     margin-top: 20px;
     padding: 10px;
     text-align: center;
