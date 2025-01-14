@@ -1,4 +1,4 @@
-* {
+* { 
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -6,22 +6,20 @@
 
 body {
     position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    min-height: 100vh; 
+    overflow: auto; 
+    background: #FFE5EC; 
 }
 
 body::before {
     content: "";
-    position: absolute;
+    position: fixed; 
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-image: url(../images/bg.png);
-    background-size: cover;
+    background-size: cover; 
     background-position: center;
     filter: blur(2px);
     z-index: -1;
@@ -36,6 +34,8 @@ body::before {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -83,11 +83,13 @@ body::before {
     display: flex;
     justify-content: space-between;
     gap: 5px;
+    flex-wrap: wrap; 
 }
 
 .profile {
     flex: 1;
     text-align: center;
+    margin-bottom: 20px; 
 }
 
 .profile-pic {
@@ -119,6 +121,7 @@ body::before {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 20px; 
 }
 
 .info-section p {
