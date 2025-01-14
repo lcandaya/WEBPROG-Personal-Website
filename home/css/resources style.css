@@ -80,7 +80,7 @@ body::before {
     justify-content: center;
 }
 
-.ref-section {
+.resources-section {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -94,9 +94,8 @@ body::before {
     line-height: 1.8;
 }
 
-.reference-box {
+.resources-box {
     width: 100%; 
     padding: 5px 0; 
-    text-align: left; 
+    text-align: center; 
 }
-
