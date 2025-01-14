@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guestbook</title>
+    <link rel="stylesheet" href="css/guestbook style.css">
+</head>
+<body>
+    <div id="app" class="main-container">
+        <div class="header">
+            <div class="title-container">Guestbook</div>
+            <a href="about me.html">
+                <button class="btn return-btn"></button>
+            </a>
+        </div>
+
+        <form @submit.prevent="addEntry">
+            <div>
+                <p>
+                    Your Name: <br>
+                    <input type="text" v-model="guestName" placeholder="Enter your name" required />
+                </p>
+                <p>
+                    What do you prefer to be called? <br>
+                    <input type="text" v-model="guestNickname" placeholder="Enter your nickname" required />
+                </p>
+                <p>
+                    Send a message <br>
+                    <textarea v-model="guestMessage" placeholder="Write your message" rows="4" required></textarea>
+                </p>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+        <p v-if="confirmationMessage" class="confirmation">{{ confirmationMessage }}</p>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/guestbook.js"></script>
+</body>
+</html>
