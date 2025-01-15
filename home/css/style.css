@@ -21,11 +21,11 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(../images/bg.png); 
+    background-image: url(../images/bg.png);
     background-size: cover;
     background-position: center;
-    filter: blur(2px); 
-    z-index: -1; 
+    filter: blur(2px);
+    z-index: -1;
 }
 
 .card {
@@ -52,7 +52,7 @@ body::before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: white;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -61,7 +61,8 @@ body::before {
 .button-section {
     margin-top: 15px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center; 
     gap: 15px; 
 }
 
@@ -73,8 +74,8 @@ body::before {
     border-radius: 10px;
     font-size: 0.9rem;
     transition: all 0.3s ease;
-    width: 21rem;
-    cursor: pointer; 
+    width: calc(100% - 65px);
+    cursor: pointer;
     text-align: center;
 }
 
@@ -84,26 +85,23 @@ body::before {
 }
 
 .home-btn {
-    position: absolute;
-    top: 190px;
-    right: 20px;
     background-image: url(../images/icon_home.png);
-    background-size: 20px; 
+    background-size: 20px;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #FFDAF1; 
+    background-color: #FFDAF1;
     padding: 10px;
     border: none;
     border-radius: 10px;
-    cursor: pointer; 
-    width: 50px; 
-    height: 38px; 
+    cursor: pointer;
+    width: 50px;
+    height: 38px;
 }
 
 .gtkm-btns {
-    display: flex; 
-    justify-content: space-between; 
-    gap: 10px; 
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 #aboutMeBtn, #galleryBtn, #educationBtn {
@@ -116,9 +114,9 @@ body::before {
     font-size: 0.9rem;
     transition: all 0.3s ease;
     text-align: center;
-    cursor: pointer; 
+    cursor: pointer;
     flex: 1;
-    display: none; 
+    display: none;
 }
 
 #aboutMeBtn:hover, #galleryBtn:hover, #educationBtn:hover {
@@ -127,17 +125,54 @@ body::before {
 }
 
 .content {
-    display: none; 
+    display: none;
     margin-top: 20px;
     font-size: 1.2rem;
     color: #E37E91;
     text-align: center;
-    height: 0; 
-    transition: height 0.3s ease, margin 0.3s ease; 
+    height: 0;
+    transition: height 0.3s ease, margin 0.3s ease;
 }
 
 .content.show {
-    display: block; 
-    height: auto; 
-    margin-top: 20px; 
+    display: block;
+    height: auto;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .image-section {
+        height: 120px;
+    }
+
+    .button-section {
+        gap: 10px;
+    }
+
+    .gtkm-btn {
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .gtkm-btns {
+        flex-direction: column;
+    }
+
+    #aboutMeBtn, #galleryBtn, #educationBtn {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .home-btn {
+        top: 160px;
+        right: 10px;
+        width: 40px;
+        height: 30px;
+    }
 }
